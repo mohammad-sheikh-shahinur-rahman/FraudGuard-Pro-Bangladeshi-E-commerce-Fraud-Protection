@@ -225,7 +225,7 @@ if (!$tx) {
 
     <div class="actions-group">
         <button class="btn btn-print" onclick="window.print()">Print Receipt</button>
-        <a href="../index.php" class="btn btn-back">Back to Dashboard</a>
+        <a href="../../index.php" class="btn btn-back">Back to Dashboard</a>
     </div>
 </div>
 

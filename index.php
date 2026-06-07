@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-require_once 'raw-php/BkashTokenized.php';
-require_once 'raw-php/config.php'; // Ensure session defaults are loaded
-require_once 'raw-php/db.php';
+require_once 'packages/php-sdk/BkashTokenized.php';
+require_once 'packages/php-sdk/config.php'; // Ensure session defaults are loaded
+require_once 'packages/php-sdk/db.php';
 
 use Shahinur\Bkash\BkashTokenized;
 use Shahinur\Bkash\BkashDb;
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Dynamic callback URL determination
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
         $domainName = $_SERVER['HTTP_HOST'];
-        $callbackUrl = $protocol . $domainName . "/raw-php/callback.php";
+        $callbackUrl = $protocol . $domainName . "/packages/php-sdk/callback.php";
 
         $result = $bkash->createPayment($amount, $invoice, $callbackUrl, $payer);
 

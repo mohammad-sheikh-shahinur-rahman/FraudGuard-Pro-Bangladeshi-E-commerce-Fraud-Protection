@@ -42,15 +42,16 @@ A professional-grade, interactive playground and developer guide for **bKash Tok
 ```text
 ├── index.php                # Main DevHub Dashboard (Playground UI)
 ├── style.css                # Modern Dark Theme Styles
-├── laravel-bkash/           # Drop-in files for Laravel projects
-│   ├── app/Services/        # BkashService.php (Core Logic)
-│   ├── app/Http/Controllers/# BkashController.php
-│   └── config/bkash.php     # Laravel Configuration
-└── raw-php/                 # Raw PHP implementation
-    ├── BkashTokenized.php   # Core API Driver
-    ├── db.php               # SQLite Database Manager
-    ├── ipn.php              # Webhook Listener
-    └── callback.php         # Redirect Handler
+├── packages/                # Unified Package Directory
+│   ├── laravel/             # Drop-in files for Laravel projects
+│   │   ├── app/Services/    # BkashService.php (Core Logic)
+│   │   ├── app/Http/Controllers/# BkashController.php
+│   │   └── config/bkash.php # Laravel Configuration
+│   └── php-sdk/             # Raw PHP implementation (SDK)
+│       ├── BkashTokenized.php # Core API Driver
+│       ├── db.php           # SQLite Database Manager
+│       ├── ipn.php          # Webhook Listener
+│       └── callback.php     # Redirect Handler
 ```
 
 ---
@@ -61,7 +62,7 @@ A professional-grade, interactive playground and developer guide for **bKash Tok
    Ensure you have a PHP environment (XAMPP/WAMP/Laragon) running.
    
 2. **Configuration**:
-   Add your merchant credentials in `raw-php/config.php` or through the **Gateway Credentials** card in the dashboard sidebar.
+   Add your merchant credentials in `packages/php-sdk/config.php` or through the **Gateway Credentials** card in the dashboard sidebar.
 
 3. **Database**:
    The project uses SQLite. The `database.sqlite` will be automatically initialized on first run.
@@ -83,7 +84,7 @@ composer require shahinur/bkash-tokenized-checkout-devhub
 
 ## 🏗️ Laravel Integration Guide
 
-This project contains a complete, drop-in integration package for **bKash Tokenized Checkout (v1.2.0-beta)** in Laravel located in the `/laravel-bkash` folder.
+This project contains a complete, drop-in integration package for **bKash Tokenized Checkout (v1.2.0-beta)** in Laravel located in the `packages/laravel` folder.
 
 ### 1. Copy Files to Project
 Copy the corresponding directories/files to your Laravel application:
@@ -121,7 +122,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 Give a ⭐️ if this project helped you!
 
 ## 📜 License
-Copyright © 2026 [Mohammad Sheikh Shahinur RAHMAN](https://github.com/shahinur).  
+Copyright © 2026 [Mohammad Sheikh Shahinur RAHMAN](https://www.linkedin.com/in/mohammad-sheikh-shahinur-rahman/).  
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 ---

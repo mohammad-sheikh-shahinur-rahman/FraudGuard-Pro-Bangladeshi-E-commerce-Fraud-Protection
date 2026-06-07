@@ -34,8 +34,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "laravel-bkash/app/",
-            "Shahinur\\Bkash\\": "raw-php/"
+            "App\\": "packages/laravel/app/",
+            "Shahinur\\Bkash\\": "packages/php-sdk/"
         }
     },
     "minimum-stability": "beta",
