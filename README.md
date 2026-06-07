@@ -31,7 +31,7 @@ A professional-grade, interactive playground and developer guide for **bKash Tok
 - **IPN Simulator**: Test your Webhook (IPN) listeners with a built-in simulation tool.
 
 ### 🚀 Integration Packages
-- **Laravel Guide**: Clean, service-oriented architecture with automatic token caching and refreshing.
+- **Laravel Guide**: Clean, service-oriented architecture with **Service Provider** and **Facade** support for easy integration.
 - **Raw PHP Driver**: A robust, session-aware class (`BkashTokenized.php`) for projects without frameworks.
 - **SQLite Database**: Self-contained transaction logging out of the box.
 

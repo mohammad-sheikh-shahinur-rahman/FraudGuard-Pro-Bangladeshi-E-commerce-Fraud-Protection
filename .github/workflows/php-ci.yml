@@ -30,3 +30,9 @@ jobs:
 
     - name: PHP Lint
       run: find . -name "*.php" -not -path "./vendor/*" | xargs -n 1 -P 8 php -l
+
+    - name: Run PHPUnit Tests
+      run: vendor/bin/phpunit --testdox
+
+    - name: Run PHP_CodeSniffer
+      run: vendor/bin/phpcs
