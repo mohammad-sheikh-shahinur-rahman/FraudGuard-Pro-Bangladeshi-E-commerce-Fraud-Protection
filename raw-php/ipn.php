@@ -1,6 +1,8 @@
 <?php
 require_once 'db.php';
 
+use Shahinur\Bkash\BkashDb;
+
 // Accept JSON payload from bKash server
 $payload = file_get_contents('php://input');
 $data = json_decode($payload, true);

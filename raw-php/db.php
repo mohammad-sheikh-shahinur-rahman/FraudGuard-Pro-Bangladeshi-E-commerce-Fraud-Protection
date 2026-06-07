@@ -1,5 +1,10 @@
 <?php
 
+namespace Shahinur\Bkash;
+
+use PDO;
+use PDOException;
+
 class BkashDb {
     private static $pdo = null;
 

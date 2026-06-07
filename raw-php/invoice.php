@@ -1,6 +1,8 @@
 <?php
 require_once 'db.php';
 
+use Shahinur\Bkash\BkashDb;
+
 $paymentId = $_GET['payment_id'] ?? '';
 $db = BkashDb::connect();
 

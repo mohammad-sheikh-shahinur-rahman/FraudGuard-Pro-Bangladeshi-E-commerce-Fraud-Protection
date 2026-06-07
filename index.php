@@ -5,6 +5,9 @@ require_once 'raw-php/BkashTokenized.php';
 require_once 'raw-php/config.php'; // Ensure session defaults are loaded
 require_once 'raw-php/db.php';
 
+use Shahinur\Bkash\BkashTokenized;
+use Shahinur\Bkash\BkashDb;
+
 // Simple routing/tab helper
 $activeTab = $_GET['tab'] ?? 'overview';
 

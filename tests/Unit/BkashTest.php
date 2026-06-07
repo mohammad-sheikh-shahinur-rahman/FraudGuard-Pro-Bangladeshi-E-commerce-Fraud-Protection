@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use BkashTokenized;
+use Shahinur\Bkash\BkashTokenized;
 
 class BkashTest extends TestCase
 {

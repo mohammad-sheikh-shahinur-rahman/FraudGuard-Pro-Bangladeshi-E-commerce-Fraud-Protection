@@ -5,6 +5,9 @@ require_once 'BkashTokenized.php';
 require_once 'config.php';
 require_once 'db.php';
 
+use Shahinur\Bkash\BkashTokenized;
+use Shahinur\Bkash\BkashDb;
+
 $paymentID = $_GET['paymentID'] ?? null;
 $status = $_GET['status'] ?? null;
 

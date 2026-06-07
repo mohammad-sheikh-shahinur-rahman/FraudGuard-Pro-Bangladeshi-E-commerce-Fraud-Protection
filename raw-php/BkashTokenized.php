@@ -1,5 +1,7 @@
 <?php
 
+namespace Shahinur\Bkash;
+
 class BkashTokenized {
     private $appKey;
     private $appSecret;
