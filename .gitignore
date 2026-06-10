@@ -1,0 +1,9 @@
+# FraudGuard Pro Git Ignore
+**/vendor/
+**/.env
+**/storage/cache/*.json
+**/storage/logs/*.log
+**/*.phar
+.DS_Store
+**/node_modules/
+**/dist/

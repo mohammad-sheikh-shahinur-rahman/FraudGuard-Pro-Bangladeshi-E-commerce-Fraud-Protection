@@ -1,0 +1,15 @@
+{
+    "name": "shahin/fraud-checker-system",
+    "description": "Bangladeshi E-commerce Fraud Protection System",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FraudChecker\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

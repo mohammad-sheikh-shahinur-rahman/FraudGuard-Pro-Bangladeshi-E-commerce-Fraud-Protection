@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Documentation | FraudGuard Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #334155; max-width: 900px; margin: 0 auto; padding: 50px 20px; background: #f8fafc; }
+        .badge { background: #6366f1; color: white; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; }
+        pre { background: #1e293b; color: #f8fafc; padding: 20px; border-radius: 12px; overflow-x: auto; }
+        code { font-family: 'Fira Code', monospace; }
+        .endpoint { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-top: 30px; }
+        h1 { font-size: 2.5rem; color: #0f172a; letter-spacing: -1px; }
+    </style>
+</head>
+<body>
+    <h1>FraudGuard Pro <span style="color: #6366f1;">API Documentation</span></h1>
+    <p>Integrate Bangladesh's most powerful fraud detection engine into your own platform.</p>
+
+    <div class="endpoint">
+        <span class="badge">GET</span> <code>/api/v1/check.php</code>
+        <h3 style="margin-top: 20px;">Analyze Phone Number</h3>
+        <p>Fetch aggregated courier statistics and risk assessment for a specific phone number.</p>
+
+        <h4>Authentication</h4>
+        <p>All requests must include a Bearer Token in the header.</p>
+        <pre>Authorization: Bearer FG-SECRET-789</pre>
+
+        <h4>Parameters</h4>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid #e2e8f0; text-align: left;">
+                <th style="padding: 10px;">Parameter</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><code>phone</code></td>
+                <td>String</td>
+                <td>11-digit BD mobile number.</td>
+            </tr>
+        </table>
+
+        <h4 style="margin-top: 30px;">Sample Request (cURL)</h4>
+        <pre>curl -X GET "https://yourdomain.com/api/v1/check.php?phone=01712345678" \
+     -H "Authorization: Bearer FG-SECRET-789"</pre>
+    </div>
+</body>
+</html>
